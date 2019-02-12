@@ -109,9 +109,9 @@ body {
   line-height: 1;
   font-size: 62.5%;
   margin: 0 auto;
-  background: #FFFFFF;
+  background: #ffffff;
   color: #222222;
-  font-family: 'Roboto, Arial, sans-serif';
+  font-family: "Roboto, Arial, sans-serif";
 }
 ol,
 ul {
@@ -141,46 +141,54 @@ table {
 * {
   box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+}
 /* Your Code Goes Here */
 /* Variables */
 /* Mixins */
-.header-container {
-  width: 100%;
-}
 .header-container img {
   width: 100%;
 }
 .header-container h2 {
   position: relative;
   bottom: 18rem;
-  left: 9%;
+  padding-left: 18%;
   font-weight: bold;
   font-size: 64px;
   line-height: 75px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.navbar {
+.container-home {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container-home .navbar {
   width: 100%;
   background-color: lightslategrey;
   position: fixed;
+  right: 0;
   padding: 10px 0 5px;
   z-index: 1;
 }
-.navbar h1 {
+.container-home .navbar h1 {
   font-weight: bold;
   font-size: 24px;
-  color: #FFFFFF;
-  padding-left: 9%;
-}
-.navbar img {
+  color: #ffffff;
+  padding-left: 18%;
   position: relative;
-  left: 90%;
-  bottom: 20px;
+  top: 5px;
 }
-.navbar nav a {
+.container-home .navbar img {
+  position: relative;
+  left: 79%;
+  bottom: 16px;
+}
+.container-home .navbar nav a {
   display: none;
 }
-.top-section {
+.container-home .top-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -189,26 +197,26 @@ table {
   position: relative;
   bottom: 170px;
 }
-.top-section .top-content {
+.container-home .top-section .top-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-.top-section .learn-more {
-  width: 30%;
+.container-home .top-section .learn-more {
+  width: 46%;
 }
-.top-section .learn-more h3 {
+.container-home .top-section .learn-more h3 {
   font-weight: bold;
   font-size: 28px;
   color: #222222;
   padding-bottom: 15px;
 }
-.top-section .learn-more p {
+.container-home .top-section .learn-more p {
   font-weight: regular;
   font-size: 16px;
   line-height: 24px;
 }
-.top-section .learn-more .button {
+.container-home .top-section .learn-more .button {
   border: 1px solid #222222;
   padding: 10px;
   margin-top: 15px;
@@ -216,30 +224,27 @@ table {
   text-align: center;
   font-size: 14px;
 }
-.top-section .home-img-1 {
-  bottom: 50px;
-}
-.top-section .designs-content {
+.container-home .top-section .designs-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 10%;
 }
-.top-section .designs-content .content {
-  width: 33%;
+.container-home .top-section .designs-content .content {
+  width: 46%;
 }
-.top-section .designs-content .content h3 {
+.container-home .top-section .designs-content .content h3 {
   font-weight: bold;
   font-size: 28px;
   color: #222222;
   padding-bottom: 15px;
 }
-.top-section .designs-content .content p {
+.container-home .top-section .designs-content .content p {
   font-weight: regular;
   font-size: 16px;
   line-height: 24px;
 }
-.top-section .designs-content .content .button {
+.container-home .top-section .designs-content .content .button {
   border: 1px solid #222222;
   padding: 10px;
   margin-top: 15px;
@@ -247,59 +252,55 @@ table {
   text-align: center;
   font-size: 14px;
 }
-.middle-section {
+.container-home .middle-section {
   display: flex;
   flex-direction: column;
-  margin: -5% 9% 0;
 }
-.middle-section img {
-  margin: 15px 0;
-}
-.middle-section h3 {
+.container-home .middle-section h3 {
   font-weight: bold;
   font-size: 28px;
   color: #222222;
-  padding-bottom: 50px;
+  padding-bottom: 33px;
 }
-.middle-section .villas {
-  padding: 15px;
+.container-home .middle-section .villas {
+  padding-top: 20px;
   text-align: center;
-  background: #D8D8D8;
+  background: #d8d8d8;
   font-size: 24px;
-  width: 24%;
+  width: 37%;
   height: 65px;
   position: relative;
-  left: 76%;
-  bottom: 50px;
+  left: 63%;
+  bottom: 40px;
 }
-.middle-section .outskirts {
-  padding: 15px;
+.container-home .middle-section .outskirts {
+  padding-top: 20px;
   text-align: center;
-  background: #D8D8D8;
+  background: #d8d8d8;
   font-size: 24px;
-  width: 24%;
+  width: 37%;
   height: 65px;
   position: relative;
-  bottom: 50px;
+  bottom: 40px;
 }
-.middle-section .blocks {
-  padding: 15px;
+.container-home .middle-section .blocks {
+  padding-top: 20px;
   text-align: center;
-  background: #D8D8D8;
+  background: #d8d8d8;
   font-size: 24px;
-  width: 24%;
+  width: 37%;
   height: 65px;
   position: relative;
-  left: 76%;
-  bottom: 50px;
+  left: 63%;
+  bottom: 40px;
 }
-.middle-section p {
+.container-home .middle-section p {
   font-weight: regular;
   font-size: 16px;
   line-height: 24px;
-  width: 35%;
-  margin-left: 35%;
-  padding: 10px 0;
+  width: 46%;
+  margin-left: 32%;
+  padding-bottom: 42px;
 }
 footer {
   background: #828282;
@@ -313,14 +314,14 @@ footer h3 {
   font-weight: regular;
   font-size: 20px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 15px;
 }
 footer p {
   font-weight: regular;
   font-size: 14px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 footer .left {
   margin-bottom: 18px;
@@ -339,5 +340,5 @@ footer .left input {
   font-size: 16px;
   margin-right: 10px;
   padding: 10px 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
