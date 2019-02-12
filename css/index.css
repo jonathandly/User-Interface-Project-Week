@@ -109,6 +109,9 @@ body {
   line-height: 1;
   font-size: 62.5%;
   margin: 0 auto;
+  background: #FFFFFF;
+  color: #222222;
+  font-family: 'Roboto, Arial, sans-serif';
 }
 ol,
 ul {
@@ -139,23 +142,8 @@ table {
   box-sizing: border-box;
 }
 /* Your Code Goes Here */
-.jumbotron-headers {
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 75px;
-  color: #FFFFFF;
-}
-.sub-headers {
-  font-weight: bold;
-  font-size: 28px;
-  color: #222222;
-}
-.footer-headings {
-  font-weight: regular;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-}
+/* Variables */
+/* Mixins */
 .header-container {
   width: 100%;
 }
@@ -165,7 +153,7 @@ table {
 .header-container h2 {
   position: relative;
   bottom: 18rem;
-  left: 8%;
+  left: 9%;
   font-weight: bold;
   font-size: 64px;
   line-height: 75px;
@@ -175,7 +163,181 @@ table {
   width: 100%;
   background-color: lightslategrey;
   position: fixed;
+  padding: 10px 0 5px;
+  z-index: 1;
+}
+.navbar h1 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding-left: 9%;
+}
+.navbar img {
+  position: relative;
+  left: 90%;
+  bottom: 20px;
 }
 .navbar nav a {
   display: none;
+}
+.top-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 170px;
+}
+.top-section .top-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.top-section .learn-more {
+  width: 30%;
+}
+.top-section .learn-more h3 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+  padding-bottom: 15px;
+}
+.top-section .learn-more p {
+  font-weight: regular;
+  font-size: 16px;
+  line-height: 24px;
+}
+.top-section .learn-more .button {
+  border: 1px solid #222222;
+  padding: 10px;
+  margin-top: 15px;
+  width: 30%;
+  text-align: center;
+  font-size: 14px;
+}
+.top-section .home-img-1 {
+  bottom: 50px;
+}
+.top-section .designs-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10%;
+}
+.top-section .designs-content .content {
+  width: 33%;
+}
+.top-section .designs-content .content h3 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+  padding-bottom: 15px;
+}
+.top-section .designs-content .content p {
+  font-weight: regular;
+  font-size: 16px;
+  line-height: 24px;
+}
+.top-section .designs-content .content .button {
+  border: 1px solid #222222;
+  padding: 10px;
+  margin-top: 15px;
+  width: 30%;
+  text-align: center;
+  font-size: 14px;
+}
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  margin: -5% 9% 0;
+}
+.middle-section img {
+  margin: 15px 0;
+}
+.middle-section h3 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+  padding-bottom: 50px;
+}
+.middle-section .villas {
+  padding: 15px;
+  text-align: center;
+  background: #D8D8D8;
+  font-size: 24px;
+  width: 24%;
+  height: 65px;
+  position: relative;
+  left: 76%;
+  bottom: 50px;
+}
+.middle-section .outskirts {
+  padding: 15px;
+  text-align: center;
+  background: #D8D8D8;
+  font-size: 24px;
+  width: 24%;
+  height: 65px;
+  position: relative;
+  bottom: 50px;
+}
+.middle-section .blocks {
+  padding: 15px;
+  text-align: center;
+  background: #D8D8D8;
+  font-size: 24px;
+  width: 24%;
+  height: 65px;
+  position: relative;
+  left: 76%;
+  bottom: 50px;
+}
+.middle-section p {
+  font-weight: regular;
+  font-size: 16px;
+  line-height: 24px;
+  width: 35%;
+  margin-left: 35%;
+  padding: 10px 0;
+}
+footer {
+  background: #828282;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+}
+footer h3 {
+  font-weight: regular;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+footer p {
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+footer .left {
+  margin-bottom: 18px;
+}
+footer .left h3 {
+  margin: 10px 0;
+}
+footer .left input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.copy {
+  background: #828282;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 10px 0;
+  color: #FFFFFF;
 }

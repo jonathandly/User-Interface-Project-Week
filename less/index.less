@@ -35,6 +35,9 @@ body{
   line-height:1;
   font-size: 62.5%;
   margin: 0 auto;
+  background: @background;
+  color: @color;
+  font-family: @fontFamily;
 }
 ol,ul{
   list-style:none;
@@ -63,29 +66,66 @@ table{
   box-sizing: border-box;
 }
 /* Your Code Goes Here */
+/* Variables */
 @background: #FFFFFF;
 @color: #222222;
 @fontFamily: 'Roboto, Arial, sans-serif';
 @recentProjects: #D8D8D8;
 @buttonBorder: #222222;
+@graySquare: #D8D8D8;
 @mobile: ~"(max-width: 500px)";
 @footerBackground: #828282;
-.jumbotron-headers {
+/* Mixins */
+.grayBlock() {
+  padding: 15px;
+  text-align: center;
+  background: @graySquare;
+  font-size: 24px;
+  width: 24%;
+  height: 65px;
+  position: relative;
+}
+.general-text() {
+  font-weight: regular;
+  font-size: 16px;
+  line-height: 24px;
+}
+.jumbotron-headers() {
   font-weight: bold;
   font-size: 64px;
   line-height: 75px;
   color: #FFFFFF;
 }
-.sub-headers {
+.sub-headers() {
   font-weight: bold;
   font-size: 28px;
   color: #222222;
 }
-.footer-headings {
+.footer-headings() {
   font-weight: regular;
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
+}
+.footer-text() {
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.navigation-logo() {
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.navigationTextExpanded() {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 85px;
+  color: #FFFFFF;
+  &:hover {
+    color: #222222;
+  }
 }
 
 .header-container {
@@ -96,16 +136,162 @@ table{
   h2 {
     position: relative;
     bottom: 18rem;
-    left: 8%;
-    .jumbotron-headers;
+    left: 9%;
+    .jumbotron-headers();
   }
 }
 .navbar {
   width: 100%;
   background-color: lightslategrey;
   position: fixed;
-
+  padding: 10px 0 5px;
+  z-index: 1;
+  h1 {
+    .navigation-logo;
+    padding-left: 9.5%;
+  }
+  img {
+    position: relative;
+    left: 88%;
+    bottom: 16px;
+  }
   nav a {
     display: none;
   }
+}
+
+.top-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 170px;
+  .top-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .learn-more {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
+    width: 30%;
+  
+    h3 {
+      .sub-headers;
+      padding-bottom: 15px;
+    }
+    p {
+      .general-text;
+    }
+    .button {
+      border: 1px solid @buttonBorder;
+      padding: 10px;
+      margin-top: 15px;
+      width: 30%;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+  .home-img-1 {
+    bottom: 50px;
+  }
+
+  .designs-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // margin-left: 9%;
+    margin-top: 10%;
+    .content {
+      width: 33%;
+      h3 {
+        .sub-headers;
+        padding-bottom: 15px;
+      }
+      p {
+        .general-text;
+      }
+      .button {
+        border: 1px solid @buttonBorder;
+        padding: 10px;
+        margin-top: 15px;
+        width: 30%;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  margin: -5% 9% 0;
+  img {
+    margin: 15px 0;
+  }
+  h3 {
+    .sub-headers;
+    padding-bottom: 50px;
+  }
+  
+  .villas {
+    .grayBlock;
+    left: 76%;
+    bottom: 50px;
+  }
+  .outskirts {
+    .grayBlock;
+    bottom: 50px;
+  }
+  .blocks {
+    .grayBlock;
+    left: 76%;
+    bottom: 50px;
+  }
+  p {
+    .general-text;
+    width: 35%;
+    margin-left: 35%;
+    padding: 10px 0;
+  }
+}
+
+footer {
+  background: @footerBackground;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+  h3 {
+    .footer-headings;
+    margin-top: 15px;
+  }
+  p {
+    .footer-text;
+  }
+  .left {
+    margin-bottom: 18px;
+    h3 {
+      margin: 10px 0;
+    }
+    input {
+      width: 100%;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.copy {
+  background: @footerBackground;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 10px 0;
+  color: #FFFFFF;
 }
