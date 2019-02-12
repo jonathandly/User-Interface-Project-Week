@@ -33,6 +33,8 @@ footer,header,hgroup,menu,nav,section{
 }
 body{
   line-height:1;
+  font-size: 62.5%;
+  margin: 0 auto;
 }
 ol,ul{
   list-style:none;
@@ -57,4 +59,53 @@ table{
   border-spacing:0;
 }
 
+* {
+  box-sizing: border-box;
+}
 /* Your Code Goes Here */
+@background: #FFFFFF;
+@color: #222222;
+@fontFamily: 'Roboto, Arial, sans-serif';
+@recentProjects: #D8D8D8;
+@buttonBorder: #222222;
+@mobile: ~"(max-width: 500px)";
+@footerBackground: #828282;
+.jumbotron-headers {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+}
+.sub-headers {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+}
+.footer-headings {
+  font-weight: regular;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.header-container {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+  h2 {
+    position: relative;
+    bottom: 18rem;
+    left: 8%;
+    .jumbotron-headers;
+  }
+}
+.navbar {
+  width: 100%;
+  background-color: lightslategrey;
+  position: fixed;
+
+  nav a {
+    display: none;
+  }
+}
