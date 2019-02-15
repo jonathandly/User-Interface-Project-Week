@@ -521,3 +521,63 @@ footer .left input {
   padding: 10px 0;
   color: #ffffff;
 }
+/* SERVICES PAGE STYLES */
+.header-img img {
+  width: 100%;
+}
+.header-img h2 {
+  position: relative;
+  bottom: 6rem;
+  padding-left: 7%;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #ffffff;
+  line-height: 0;
+}
+.top-text {
+  font-weight: regular;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 5% 8%;
+  width: 75%;
+}
+section {
+  display: flex;
+  justify-content: space-evenly;
+}
+section .tab-link {
+  width: 15%;
+  height: 50px;
+  padding-top: 10px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid black;
+}
+section .tab-link:hover {
+  background-color: lightseagreen;
+  color: whitesmoke;
+}
+.tab-item,
+.tab-img {
+  display: none;
+}
+.tab-item-selected {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  align-items: flex-start;
+  width: 38%;
+  line-height: 1.2;
+}
+.tab-1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8%;
+}
+.tab-item-heading {
+  font-size: 1.8rem;
+  margin: 5% 0 0 8%;
+  padding: 24px 0;
+  font-weight: 700;
+}
