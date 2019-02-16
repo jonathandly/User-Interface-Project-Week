@@ -22,3 +22,48 @@ const menu = document.querySelector('.menu');
 const menuButton = document.querySelector('.menu-button');
 
 menuButton.addEventListener('click', () => toggleMenu());
+
+class TabLink {
+    constructor(element) {
+        this.element = element;
+        this.data = this.element.dataset.tab;
+
+        
+        this.item = document.querySelector(`.tab-item[data-tab='${this.data}']`);
+        this.img = document.querySelector(`.tab-img[data-tab='${this.data}']`);
+
+        this.tabItem = new TabItem(this.item);
+
+        this.element.addEventListener('click', () => this.select());
+    };
+
+    select() {
+        const links = document.querySelectorAll('.tab-link');
+        const imgs = document.querySelectorAll('.tab-img');
+
+        Array.from(links).forEach(link => link.classList.remove('tab-link-selected'));
+        Array.from(imgs).forEach(img => img.classList.remove('tab-item-selected'));
+        
+        this.img.classList.add('tab-item-selected');
+        this.element.classList.add('tab-link-selected');
+
+        this.tabItem.select();
+    }
+}
+
+class TabItem {
+    constructor(element) {
+        this.element = element;
+    }
+
+    select() {
+        const items = document.querySelectorAll('.tab-item');
+
+        Array.from(items).forEach(item => item.classList.remove('tab-item-selected'));
+
+        this.element.classList.add('tab-item-selected');
+    }
+}
+
+let links = document.querySelectorAll('.tab-link')
+            .forEach(link => new TabLink(link));

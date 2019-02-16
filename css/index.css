@@ -570,7 +570,10 @@ section .tab-link:hover {
   width: 38%;
   line-height: 1.2;
 }
-.tab-1 {
+.tab-1,
+.tab-2,
+.tab-3,
+.tab-4 {
   display: flex;
   flex-direction: row;
   margin-bottom: 8%;
