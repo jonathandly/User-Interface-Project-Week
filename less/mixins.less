@@ -1,0 +1,61 @@
+/* Mixins */
+.grayBlock() {
+    padding-top: 20px;
+    text-align: center;
+    background: @graySquare;
+    font-size: 24px;
+    width: 37%;
+    height: 65px;
+    position: relative;
+  }
+  .general-text() {
+    font-weight: regular;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .jumbotron-headers() {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    color: #ffffff;
+  }
+  .sub-headers() {
+    font-weight: bold;
+    font-size: 28px;
+    color: #222222;
+  }
+  .footer-headings() {
+    font-weight: regular;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  .footer-text() {
+    font-weight: regular;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+  }
+  .navigation-logo() {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  .navigationTextExpanded() {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 85px;
+    color: #ffffff;
+    &:hover {
+      color: #222222;
+    }
+  }
+  .buttonMixin() {
+    border: 1px solid @buttonBorder;
+    padding: 10px;
+    margin-top: 15px;
+    width: 30%;
+    text-align: center;
+    font-size: 14px;
+  }
+  

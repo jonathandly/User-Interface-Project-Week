@@ -31,6 +31,7 @@ class TabLink {
         
         this.item = document.querySelector(`.tab-item[data-tab='${this.data}']`);
         this.img = document.querySelector(`.tab-img[data-tab='${this.data}']`);
+        this.heading = document.querySelector(`.tab-item-heading[data-tab='${this.data}']`);
 
         this.tabItem = new TabItem(this.item);
 
@@ -40,12 +41,15 @@ class TabLink {
     select() {
         const links = document.querySelectorAll('.tab-link');
         const imgs = document.querySelectorAll('.tab-img');
+        const headings = document.querySelectorAll('.tab-item-heading');
 
         Array.from(links).forEach(link => link.classList.remove('tab-link-selected'));
         Array.from(imgs).forEach(img => img.classList.remove('tab-item-selected'));
+        Array.from(headings).forEach(heading => heading.classList.remove('tab-item-heading-selected'));
         
         this.img.classList.add('tab-item-selected');
         this.element.classList.add('tab-link-selected');
+        this.heading.classList.add('tab-item-heading-selected');
 
         this.tabItem.select();
     }

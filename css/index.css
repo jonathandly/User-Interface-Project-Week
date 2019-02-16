@@ -144,7 +144,6 @@ table {
 img {
   max-width: 100%;
 }
-/* Your Code Goes Here */
 /* Variables */
 /* Mixins */
 .header-container img {
@@ -153,7 +152,7 @@ img {
 .header-container h2 {
   position: relative;
   bottom: 18rem;
-  padding-left: 18%;
+  padding-left: 13%;
   font-weight: bold;
   font-size: 64px;
   line-height: 75px;
@@ -169,7 +168,7 @@ img {
   }
 }
 .container-home {
-  max-width: 800px;
+  max-width: 935px;
   width: 100%;
   margin: 0 auto;
 }
@@ -186,7 +185,7 @@ img {
   font-weight: bold;
   font-size: 24px;
   color: #ffffff;
-  padding-left: 18%;
+  padding-left: 13%;
   position: relative;
   top: 5px;
 }
@@ -197,7 +196,7 @@ img {
 }
 .container-home .navbar .menu-button {
   position: absolute;
-  right: 18%;
+  right: 13%;
   bottom: 10px;
   cursor: pointer;
 }
@@ -232,7 +231,7 @@ img {
   margin-top: -35px;
   padding-top: 20%;
 }
-.container-home .top-section {
+.top-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -242,47 +241,47 @@ img {
   bottom: 170px;
 }
 @media (max-width: 500px) {
-  .container-home .top-section {
+  .top-section {
     bottom: 145px;
   }
 }
-.container-home .top-section .top-content {
+.top-section .top-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 500px) {
-  .container-home .top-section .top-content .home-img-1 {
+  .top-section .top-content .home-img-1 {
     width: 90%;
   }
 }
 @media (max-width: 500px) {
-  .container-home .top-section .top-content {
+  .top-section .top-content {
     flex-direction: column-reverse;
     margin-top: 5%;
   }
 }
-.container-home .top-section .learn-more {
+.top-section .learn-more {
   width: 46%;
 }
 @media (max-width: 500px) {
-  .container-home .top-section .learn-more {
+  .top-section .learn-more {
     width: 90%;
     margin-top: 5%;
   }
 }
-.container-home .top-section .learn-more h3 {
+.top-section .learn-more h3 {
   font-weight: bold;
   font-size: 28px;
   color: #222222;
   padding-bottom: 15px;
 }
-.container-home .top-section .learn-more p {
+.top-section .learn-more p {
   font-weight: regular;
   font-size: 16px;
   line-height: 24px;
 }
-.container-home .top-section .learn-more .button {
+.top-section .learn-more .button {
   border: 1px solid #222222;
   padding: 10px;
   margin-top: 15px;
@@ -291,50 +290,50 @@ img {
   font-size: 14px;
 }
 @media (max-width: 500px) {
-  .container-home .top-section .learn-more .button {
+  .top-section .learn-more .button {
     width: 100%;
     height: 50px;
     padding-top: 10px;
     font-size: 24px;
   }
 }
-.container-home .top-section .designs-content {
+.top-section .designs-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 10%;
 }
 @media (max-width: 500px) {
-  .container-home .top-section .designs-content .home-img-2 {
+  .top-section .designs-content .home-img-2 {
     width: 90%;
   }
 }
 @media (max-width: 500px) {
-  .container-home .top-section .designs-content {
+  .top-section .designs-content {
     flex-direction: column;
   }
 }
-.container-home .top-section .designs-content .content {
+.top-section .designs-content .content {
   width: 46%;
 }
 @media (max-width: 500px) {
-  .container-home .top-section .designs-content .content {
+  .top-section .designs-content .content {
     width: 90%;
     margin-top: 5%;
   }
 }
-.container-home .top-section .designs-content .content h3 {
+.top-section .designs-content .content h3 {
   font-weight: bold;
   font-size: 28px;
   color: #222222;
   padding-bottom: 15px;
 }
-.container-home .top-section .designs-content .content p {
+.top-section .designs-content .content p {
   font-weight: regular;
   font-size: 16px;
   line-height: 24px;
 }
-.container-home .top-section .designs-content .content .button {
+.top-section .designs-content .content .button {
   border: 1px solid #222222;
   padding: 10px;
   margin-top: 15px;
@@ -343,34 +342,34 @@ img {
   font-size: 14px;
 }
 @media (max-width: 500px) {
-  .container-home .top-section .designs-content .content .button {
+  .top-section .designs-content .content .button {
     width: 100%;
     height: 50px;
     padding-top: 10px;
     font-size: 24px;
   }
 }
-.container-home .middle-section {
+.middle-section {
   display: flex;
   flex-direction: column;
 }
 @media (max-width: 500px) {
-  .container-home .middle-section img {
+  .middle-section img {
     height: fit-content;
   }
 }
-.container-home .middle-section h3 {
+.middle-section h3 {
   font-weight: bold;
   font-size: 28px;
   color: #222222;
   padding-bottom: 33px;
 }
 @media (max-width: 500px) {
-  .container-home .middle-section h3 {
+  .middle-section h3 {
     padding-left: 5%;
   }
 }
-.container-home .middle-section .villas {
+.middle-section .villas {
   padding-top: 20px;
   text-align: center;
   background: #d8d8d8;
@@ -382,7 +381,7 @@ img {
   bottom: 40px;
 }
 @media (max-width: 500px) {
-  .container-home .middle-section .villas {
+  .middle-section .villas {
     width: 90%;
     left: 5%;
     bottom: 25px;
@@ -391,7 +390,7 @@ img {
     font-size: 36px;
   }
 }
-.container-home .middle-section .outskirts {
+.middle-section .outskirts {
   padding-top: 20px;
   text-align: center;
   background: #d8d8d8;
@@ -402,7 +401,7 @@ img {
   bottom: 40px;
 }
 @media (max-width: 500px) {
-  .container-home .middle-section .outskirts {
+  .middle-section .outskirts {
     width: 90%;
     left: 5%;
     bottom: 25px;
@@ -411,7 +410,7 @@ img {
     font-size: 36px;
   }
 }
-.container-home .middle-section .blocks {
+.middle-section .blocks {
   padding-top: 20px;
   text-align: center;
   background: #d8d8d8;
@@ -423,7 +422,7 @@ img {
   bottom: 40px;
 }
 @media (max-width: 500px) {
-  .container-home .middle-section .blocks {
+  .middle-section .blocks {
     width: 90%;
     left: 5%;
     bottom: 25px;
@@ -432,7 +431,7 @@ img {
     font-size: 36px;
   }
 }
-.container-home .middle-section p {
+.middle-section p {
   font-weight: regular;
   font-size: 16px;
   line-height: 24px;
@@ -441,7 +440,7 @@ img {
   padding-bottom: 42px;
 }
 @media (max-width: 500px) {
-  .container-home .middle-section p {
+  .middle-section p {
     width: 90%;
     margin-left: 5%;
   }
@@ -452,7 +451,7 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 15px 0;
+  padding: 50px 0;
 }
 @media (max-width: 500px) {
   footer {
@@ -464,7 +463,6 @@ footer h3 {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
-  margin-top: 15px;
 }
 footer p {
   font-weight: regular;
@@ -480,9 +478,6 @@ footer .left {
     width: 90%;
   }
 }
-footer .left h3 {
-  margin: 10px 0;
-}
 @media (max-width: 500px) {
   footer .left h3 {
     margin-top: -10px;
@@ -492,6 +487,7 @@ footer .left input {
   width: 100%;
   height: 30px;
   margin-bottom: 10px;
+  border-radius: 3px;
 }
 @media (max-width: 500px) {
   footer .left input {
@@ -499,6 +495,11 @@ footer .left input {
     height: 45px;
     font-size: 24px;
   }
+}
+footer .middle-left,
+footer .middle-right,
+footer .right {
+  line-height: 0;
 }
 @media (max-width: 500px) {
   footer .middle-left,
@@ -514,6 +515,9 @@ footer .left input {
     padding-right: 65%;
   }
 }
+footer h3 {
+  font-weight: 800;
+}
 .copy {
   background: #828282;
   text-align: center;
@@ -522,25 +526,35 @@ footer .left input {
   color: #ffffff;
 }
 /* SERVICES PAGE STYLES */
+#services-menu-button {
+  position: absolute;
+  right: 8%;
+  bottom: 10px;
+  cursor: pointer;
+}
+#services-h1 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+  padding-left: 8%;
+  position: relative;
+  top: 5px;
+}
 .header-img img {
   width: 100%;
 }
 .header-img h2 {
   position: relative;
   bottom: 6rem;
-  padding-left: 7%;
-  font-weight: bold;
+  padding-left: 8%;
+  font-weight: 800;
   font-size: 64px;
-  line-height: 75px;
   color: #ffffff;
-  line-height: 0;
 }
 .top-text {
-  font-weight: regular;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 5% 8%;
-  width: 75%;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 8% 2.5%;
 }
 section {
   display: flex;
@@ -559,14 +573,16 @@ section .tab-link:hover {
   color: whitesmoke;
 }
 .tab-item,
-.tab-img {
+.tab-img,
+.tab-item-heading {
   display: none;
 }
 .tab-item-selected {
   display: flex;
   flex-direction: column;
-  font-size: 1.6rem;
+  font-size: 24px;
   align-items: flex-start;
+  margin-bottom: 3%;
   width: 38%;
   line-height: 1.2;
 }
@@ -576,11 +592,15 @@ section .tab-link:hover {
 .tab-4 {
   display: flex;
   flex-direction: row;
-  margin-bottom: 8%;
+}
+.tab-item-heading-selected {
+  margin: 3% 8%;
+  display: block;
 }
 .tab-item-heading {
   font-size: 1.8rem;
-  margin: 5% 0 0 8%;
-  padding: 24px 0;
   font-weight: 700;
 }
+/* Your Code Goes Here */
+/* Variables */
+/* Mixins */
