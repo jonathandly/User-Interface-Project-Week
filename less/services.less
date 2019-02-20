@@ -10,11 +10,14 @@
     font-size: 24px;
     color: @background;
     padding-left: 8%;
-    position: relative;
+    position: absolute;
     top: 5px;
 }
 .header-img img {
     width: 100%;
+    @media @mobile {
+      height: fit-content;
+    }
   }
   .header-img h2 {
       position: relative;
@@ -41,11 +44,18 @@
     line-height: 30px;
     margin: 0 8% 2.5%;
     // width: 75%;
+    @media @mobile {
+      width: 84%;
+      margin-top: -10px;
+    }
   }
   
   section {
     display: flex;
     justify-content: space-evenly;
+    @media @mobile {
+      flex-direction: column;
+    }
     .tab-link {
       width: 15%;
       height: 50px;
@@ -53,6 +63,11 @@
       font-size: 24px;
       text-align: center;
       border: 1px solid black;
+      @media @mobile {
+        width: 80%; 
+        margin-bottom: 15px;
+        margin-left: 8%;
+      }
       &:hover {
         background-color: lightseagreen;
         color: whitesmoke;
@@ -73,11 +88,18 @@
     // margin-left: 8%;
     width: 38%;
     line-height: 1.2;
+    @media @mobile {
+      width: 90%;
+    }
   
   }
   .tab-1, .tab-2, .tab-3, .tab-4 {
     display: flex;
     flex-direction: row;
+    @media @mobile {
+      flex-direction: column;
+      margin-left: 8%;
+    }
     // padding-bottom: 3%;
   }
   .tab-item-heading-selected {
