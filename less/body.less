@@ -15,6 +15,14 @@
       align-items: center;
       .home-img-1 {
         @media @mobile {
+          // width: 100%;
+          display: none;
+        }
+      }
+      .home-mobile-img-1 {
+        display: none;
+        @media @mobile {
+          display: block;
           width: 100%;
         }
       }
@@ -67,6 +75,13 @@
       margin-top: 10%;
       .home-img-2 {
         @media @mobile {
+          display: none;
+        }
+      }
+      .home-mobile-img-2 {
+        display: none;
+        @media @mobile {
+          display: block;
           width: 100%;
         }
       }
@@ -108,10 +123,37 @@
   .middle-section {
     display: flex;
     flex-direction: column;
-    img {
+    .home-villas {
       @media @mobile {
-        height: fit-content;
-        // padding: 0 5%;
+        display: none;
+      }
+    }
+    .home-mobile-villas {
+      display: none;
+      @media @mobile {
+        display: block;
+      }
+    }
+    .home-outskirts {
+      @media @mobile {
+        display: none;
+      }
+    }
+    .home-mobile-outskirts {
+      display: none;
+      @media @mobile {
+        display: block;
+      }
+    }
+    .home-the-blocks {
+      @media @mobile {
+        display: none;
+      }
+    }
+    .home-mobile-the-blocks {
+      display: none;
+      @media @mobile {
+        display: block;
       }
     }
     h3 {

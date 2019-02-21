@@ -9,7 +9,7 @@ const toggleMenu = () => {
     menu.classList.toggle('menu-expand');
     if(menu.classList.contains('menu-expand')) {
         menuButton.setAttribute('src', close);
-        navbar.setAttribute('style', 'background-color: rgba(119,136,153,0.7);');
+        navbar.setAttribute('style', 'background-color: rgba(119,136,153,0.9);');
     } else {
         menuButton.setAttribute('src', burger);
         navbar.setAttribute('style', 'background-color: rgb(119,136,153);');
