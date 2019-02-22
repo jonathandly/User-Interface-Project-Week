@@ -15,6 +15,9 @@
 .container {
     display: flex;
     flex-direction: row;
+    @media @mobile {
+        flex-direction: column;
+    }
 }
 
 .left-section {
@@ -40,6 +43,12 @@
         padding: 10px;
         border: 1px solid darkgrey;
         border-radius: 5px;
+        @media @mobile {
+            width: 92%;
+        }
+    }
+    .enter-email::placeholder {
+        color: darkgrey;
     }
     .email-bottom-text {
         font-size: 14px;
@@ -55,6 +64,9 @@
         height: 35px;
         font-size: 16px;
         margin-bottom: 10%;
+        @media @mobile {
+            width: 92%;
+        }
     }
     textarea {
         width: 500px;
@@ -62,6 +74,9 @@
         border: 1px solid darkgrey;
         border-radius: 5px;
         margin-bottom: 40px;
+        @media @mobile {
+            width: 92%;
+        }
     }
     .radio {
         display: flex;
@@ -86,6 +101,10 @@
             background: #828282;
             color: white;
         }
+        @media @mobile {
+            width: 92%;
+            margin-bottom: 5%;
+        }
     }
 }
 
@@ -94,18 +113,37 @@
     flex-direction: column;
     margin-left: 15%;
     margin-bottom: 10%;
+    @media @mobile {
+        margin: 0 8% 5%;
+    }
     h3 {
         font-size: 2.4rem;
         font-weight: 700;
         margin-top: -13%;
+        @media @mobile {
+            margin: 20px 0;
+            font-size: 2rem;
+        }
     }
     h4 {
         font-size: 1.4rem;
         font-weight: 800;
         margin-bottom: -15px;
+        @media @mobile {
+            margin: 10px 0;
+        }
     }
     p {
         margin: -15px 0;
         font-size: 16px;
+        @media @mobile {
+            margin: 0;
+            line-height: 24px;
+        }
+    }
+    .florida, .california {
+        @media @mobile {
+            margin-top: 30px;
+        }
     }
 }

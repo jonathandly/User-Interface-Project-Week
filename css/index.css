@@ -734,7 +734,7 @@ section .tab-link:hover {
   flex-direction: column;
   font-size: 24px;
   align-items: flex-start;
-  margin-bottom: 3%;
+  margin-bottom: 10%;
   width: 38%;
   line-height: 1.2;
 }
@@ -788,6 +788,11 @@ section .tab-link:hover {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+}
 .left-section {
   display: flex;
   flex-direction: column;
@@ -813,6 +818,14 @@ section .tab-link:hover {
   border: 1px solid darkgrey;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .left-section .enter-email {
+    width: 92%;
+  }
+}
+.left-section .enter-email::placeholder {
+  color: darkgrey;
+}
 .left-section .email-bottom-text {
   font-size: 14px;
   padding-bottom: 10%;
@@ -828,12 +841,22 @@ section .tab-link:hover {
   font-size: 16px;
   margin-bottom: 10%;
 }
+@media (max-width: 500px) {
+  .left-section select {
+    width: 92%;
+  }
+}
 .left-section textarea {
   width: 500px;
   height: 150px;
   border: 1px solid darkgrey;
   border-radius: 5px;
   margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .left-section textarea {
+    width: 92%;
+  }
 }
 .left-section .radio {
   display: flex;
@@ -859,23 +882,57 @@ section .tab-link:hover {
   background: #828282;
   color: white;
 }
+@media (max-width: 500px) {
+  .left-section .button {
+    width: 92%;
+    margin-bottom: 5%;
+  }
+}
 .right-section {
   display: flex;
   flex-direction: column;
   margin-left: 15%;
   margin-bottom: 10%;
 }
+@media (max-width: 500px) {
+  .right-section {
+    margin: 0 8% 5%;
+  }
+}
 .right-section h3 {
   font-size: 2.4rem;
   font-weight: 700;
   margin-top: -13%;
+}
+@media (max-width: 500px) {
+  .right-section h3 {
+    margin: 20px 0;
+    font-size: 2rem;
+  }
 }
 .right-section h4 {
   font-size: 1.4rem;
   font-weight: 800;
   margin-bottom: -15px;
 }
+@media (max-width: 500px) {
+  .right-section h4 {
+    margin: 10px 0;
+  }
+}
 .right-section p {
   margin: -15px 0;
   font-size: 16px;
+}
+@media (max-width: 500px) {
+  .right-section p {
+    margin: 0;
+    line-height: 24px;
+  }
+}
+@media (max-width: 500px) {
+  .right-section .florida,
+  .right-section .california {
+    margin-top: 30px;
+  }
 }
