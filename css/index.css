@@ -309,6 +309,11 @@ img {
   text-align: center;
   font-size: 14px;
 }
+.top-section .learn-more .button:hover {
+  background: lightslategray;
+  color: white;
+  cursor: progress;
+}
 @media (max-width: 500px) {
   .top-section .learn-more .button {
     width: 100%;
@@ -369,6 +374,11 @@ img {
   width: 30%;
   text-align: center;
   font-size: 14px;
+}
+.top-section .designs-content .content .button:hover {
+  background: lightslategray;
+  color: white;
+  cursor: progress;
 }
 @media (max-width: 500px) {
   .top-section .designs-content .content .button {
@@ -539,6 +549,11 @@ footer p {
     width: 90%;
   }
 }
+@media (max-width: 500px) {
+  footer .left p {
+    padding-bottom: 20px;
+  }
+}
 footer .left .lets-talk {
   margin-bottom: 10px;
 }
@@ -550,6 +565,9 @@ footer .left input {
   border-radius: 5px;
   font-size: 16px;
   padding: 10px;
+}
+footer .left input::placeholder {
+  color: lightgray;
 }
 @media (max-width: 500px) {
   footer .left input {
@@ -721,8 +739,9 @@ section .tab-link {
   }
 }
 section .tab-link:hover {
-  background-color: lightseagreen;
+  background-color: lightslategray;
   color: whitesmoke;
+  cursor: progress;
 }
 .tab-item,
 .tab-img,
@@ -879,8 +898,9 @@ section .tab-link:hover {
 }
 .left-section .button:hover {
   border: 1px solid black;
-  background: #828282;
+  background: lightslategrey;
   color: white;
+  cursor: progress;
 }
 @media (max-width: 500px) {
   .left-section .button {

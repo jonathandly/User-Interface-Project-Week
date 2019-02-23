@@ -23,6 +23,11 @@ footer {
       @media @mobile {
         width: 90%;
       }
+      p {
+        @media @mobile {
+          padding-bottom: 20px;
+        }
+      }
       .lets-talk {
         margin-bottom: 10px;
       }
@@ -34,6 +39,9 @@ footer {
         border-radius: 5px;
         font-size: 16px;
         padding: 10px;
+        &::placeholder {
+          color: lightgray;
+        }
         @media @mobile {
           margin-bottom: 0;
           height: 45px;

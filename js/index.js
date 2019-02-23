@@ -3,10 +3,21 @@
 const close = '../img/nav-hamburger-close.png';
 const burger = '../img/nav-hamburger.png';
 const navbar = document.querySelector('.navbar');
+const anchor = document.querySelectorAll('.menu ul li a');
+const menu = document.querySelector('.menu');
+
+
+const menuButton = document.querySelector('.menu-button');
+
+function slideIn() {
+    let tween = new TimelineLite({});
+    tween.fromTo(menu, 0.5, {height: 0}, {height: '100vh'});
+}
 
 const toggleMenu = () => {
     // Toggle the "menu-expand" class on the menu reference.
     menu.classList.toggle('menu-expand');
+    // slideIn();
     if(menu.classList.contains('menu-expand')) {
         menuButton.setAttribute('src', close);
         navbar.setAttribute('style', 'background-color: rgba(119,136,153,0.9);');
@@ -14,14 +25,12 @@ const toggleMenu = () => {
         menuButton.setAttribute('src', burger);
         navbar.setAttribute('style', 'background-color: rgb(119,136,153);');
     }
-
 }
 
-const menu = document.querySelector('.menu');
-
-const menuButton = document.querySelector('.menu-button');
-
-menuButton.addEventListener('click', () => toggleMenu());
+menuButton.addEventListener('click', () => {
+    toggleMenu()
+    slideIn();
+});
 
 class TabLink {
     constructor(element) {
